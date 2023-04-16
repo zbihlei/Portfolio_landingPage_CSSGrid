@@ -1,0 +1,19 @@
+@mixin before_circle {
+    &:before{
+        content: '';
+        z-index: -1;
+        position: absolute;
+        border-radius: 100%;
+        width: 36px;
+        height: 36px;
+        top: -25%;
+        left: 0;
+        background: $main-color;
+    }
+}
+
+@mixin before_icons {
+    position: absolute;
+    left: -60px;
+    top: 15px;
+}

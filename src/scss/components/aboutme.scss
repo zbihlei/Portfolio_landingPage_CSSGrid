@@ -1,0 +1,75 @@
+@import "../vars";
+@import "../fonts";
+@import "../mixins";
+@import "../components/title.scss";
+
+.aboutme{
+    height: 100vh;
+    padding-top: 120px;
+    &-content{
+        display: grid;
+        grid-template-columns: 500px auto;
+        grid-template-rows: min-content;
+        grid-template-areas: 
+        'photo descr'
+        'photo skils';
+        &__photo{
+            grid-area: photo;
+            & img{
+                margin-left: 70px;
+                width: 400px;
+                height: 600px;
+            }
+        }
+        &__descr{
+            grid-area: descr;
+            padding-top: 5px;
+        }
+        &__subtitle{
+            position: relative;
+            left: 10px;
+            margin-bottom: 10px;
+            @include before_circle;
+            &:before{
+                content:'';
+                left: -10px;
+                }
+            }
+        
+        &__skils{
+            grid-area: skils;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: min-content;
+            grid-gap: 20px;
+            .skill-item{
+                margin-left: 70px;
+                margin-top: 20px;
+                position: relative;
+                @include before_circle;
+                &:before{
+                    content: '';
+                    left: -70px;
+                    top: 10px;
+                }
+                #webdev:before{
+                    content: url('../../img/svg/webdev.svg');
+                    @include before_icons;
+                    }
+                #appdev:before{
+                    content: url('../../img/svg/appdev.svg');
+                    @include before_icons;
+                    }
+                #uiux:before{
+                    content: url('../../img/svg/uiux.svg');
+                    @include before_icons;
+                    }
+                &__text{
+                    margin-top: 10px;
+                    font-size: 12px;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+}
