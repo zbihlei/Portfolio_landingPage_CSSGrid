@@ -5,7 +5,8 @@
 
 @import"./components/headsection";
 @import"./components/aboutme.scss";
-
+@import"./components/experience.scss";
+@import"./components/skills.scss";
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -20,7 +21,7 @@
 .divider{
     height: 3px;
     width: 70px;
-    margin:15px 0;
+    margin:25px auto 25px auto;
     background-color:$main-color;
 }
 
