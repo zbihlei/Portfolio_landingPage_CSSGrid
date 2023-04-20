@@ -4,21 +4,9 @@
 @import "../components/title.scss";
 
 .resume {
-    height: 100vh;
-    padding-top: 50px;
-    &__title {
-        text-align: center;
-        position: relative;
-        @include before_circle;
-        &:before{
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%) ;
-        }
-    }
-    &__subtitle{
-        text-align: center;
-    }
+    height: 100%;
+    padding-top: 120px;
+    
     &__wrapper {
         padding: 60px 65px 0 65px;
         display: grid;

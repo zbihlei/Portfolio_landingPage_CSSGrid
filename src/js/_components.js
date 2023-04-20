@@ -11,4 +11,9 @@ const close =document.getElementsByClassName('menu__close');
             })
         }
     
-   
+   const counters = document.querySelectorAll('.scale__top-perc'),
+          lines = document.querySelectorAll('.scale__in');
+
+    counters.forEach((item , i) =>{
+      lines[i].style.width = item.innerHTML;
+    });

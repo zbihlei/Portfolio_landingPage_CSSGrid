@@ -4,22 +4,9 @@
 @import "../components/title.scss";
 
 .skills {
-    height: auto;
-    &__title{
-        position: relative;
-        text-align: center;
-        @include before_circle;
-        &:before{
-            content: '';
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%) ;
-            position: absolute;
-        }
-    }
-    &__subtitle{
-        text-align: center;
-    }
+    height: 100%;
+    padding-top: 120px;
+   
     &__wrapper{
         display: grid;
         grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
@@ -49,7 +36,6 @@
         grid-template-columns:repeat(auto-fill, minmax(350px, 1fr));
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 30px;
-        margin-bottom: 100px; //remove
         .scale{
             padding-top: 120px;
             &__top{
@@ -74,13 +60,13 @@
             }
             &__parent{
                 height: 20px;
-                width: 100%;
+                // width: 100%;
                 background-color: #acacac;
                 border-radius: 5px;
                 margin-top: 40px;
             }
             &__in{
-                width: 70%;
+                // width: 70%;
                 height: 100%;
                 border-radius:5px;
                 background-color: $main-color;
